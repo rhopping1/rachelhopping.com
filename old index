@@ -1,0 +1,65 @@
+  
+            
+            
+            <div class="five columns" style="margin-top: 20%">
+            <a href="teaberry.html"><img class="pic" src="images/teaberrymac.png" width="100%" alt="Teaberry Frozen Yogurt homepage"></a>
+            <h4>Teaberry Frozen Yogurt Website</h4>
+            <p>A redesign of a local business in San Luis Obispo, California. My client was Teaberry Frozen Yogurt. After speaking with the owner, creating an information architecture, digital mockups, and rounds of user testing, this was the final site.</p>
+            <a class="button" href="teaberry.html">See more</a>
+          </div>
+
+      <div class="seven columns" style="margin-top: 20%">
+        <a href="sunset.html"><img class="pic" src="images/sunset.png" width="100%" alt="Sunset Magazine Spread"></a>
+        <h4>Sunset Magazine Spread</h4>
+        <p>This two-page spread was recreated from a Sunset Magazine article. Every aspect of the design was considered, from font size, leading and kerning, images and overall composition.</p>
+		<a class="button" href="sunset.html">See more</a>      
+      </div>
+	</div>
+    
+    <div class="row">
+	  <div class="seven columns" style="margin-top:5%">
+        <a href="hfa.html"><img class="pic" src="images/hfa.png" width="100%" alt="Happy Face Apparel homepage"></a>
+      	<h4>Happy Face Apparel</h4>
+        <p>Happy Face Apparel's website was redone after using an updated information architecture, creating personas, and final critiques.</p>
+		<a class="button" href="hfa.html">See more</a>
+      </div>
+      
+	  <div class="five columns" style="margin-top:5%">
+        <a href="placeme.html"><img class="pic" src="images/app1.jpg" width="100%" alt="placeme app mockup"></a>
+        <h4>PlaceMe App Design</h4>
+        <p>Mobile application design created with an international team in Munich, Germany. The app was created after considering personas and user testing and multiple rounds of mockups and presentations for feedback from mock clients.</p>
+		<a class="button" href="placeme.html">See more</a>
+      </div>
+	</div>
+    
+    <div class="row">
+	  <div class="five columns" style="margin-top:5%">
+        <a href="birdsnest.html"> <img class="pic" src="images/birdsnest.png" width="100%" alt="Bird's Nest Cafe homepage"></a>
+        <h4>Bird&rsquo;s Nest Caf&eacute;</h4>
+        <p>I was given the original website and instructed to hand-code the site in order to create the best visual heirarchy and color theory through each page. </p>
+        <a class="button" href="birdsnest.html">See more</a>
+      </div>      
+    
+      <div class="seven columns" style="margin-top:5%">
+        <a href="posters.html"><img class="pic" src="images/postersmockup.png" width="100%" alt="posters mockup"></a>
+        <h4>Graphic Design</h4>
+        <p>Print designs. A three fold brochure for a local Etsy shop. A store window poster advertising the California Mid-State Fair. A sandwich board poster for a club meeting at Cal Poly. </p>
+		<a class="button" href="posters.html">See more</a>
+      </div>
+    </div>
+  </div><!-- #BeginLibraryItem "/Library/footer rh.com.lbi" -->
+
+  <div class="container footer"> <!-- footer area -->
+  	<div class="row">
+    	<div class="four columns" style="margin-top:5%;text-align:center">
+        <a href="https://www.linkedin.com/in/rachel-hopping" target="_blank" class="link"><img src="images/linkedin.png" height="30" alt="Linkedin link"></a>
+        <a href="mailto:rhopping1@yahoo.com" class="link"><img src="images/email.png" height="30" alt="email me"></a>
+		<a href="Library/images/R-Hopping-resume.pdf" target="_blank" class="link"><img src="images/doc.png" height="30" alt="resume link"></a>
+        </div>
+        <div class="offset-by-four columns four" style="margin-top:5%; text-align:center">
+        <p>created by Rachel Hopping</p>
+        </div>
+    </div>
+  </div>
+  
+<!-- #EndLibraryItem --><!-- End Document

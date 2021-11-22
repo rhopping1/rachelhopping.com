@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Happy Face Apparel</title>
+  <meta name="description" content="">
+  <meta name="Rachel Hopping" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/index.css">
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/R_logo.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="clearfix">
+      <div class="container header" style="margin-top:5%"> 
+        <div class="one column logo">
+            <a href="index.html"><img src="images/R_logo.png" width="100" alt="Rachel Hopping logo"></a>
+        </div>
+        <div class="ten columns heading"> 
+            <div class="name">
+                <h1>Rachel Hopping</h1>
+            </div>
+            <div class="navigation">
+                <ul>
+                    <li><a href="./index.html#scroll">Resume</a></li>
+                    <li><a href="./index.html#portfolio">Portfolio</a></li>
+                    <li><a href="./index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </div> <!-- end heading container -->
+      
+    <div class="container" id="back-link">
+        <div class="two columns">
+            <a class="" href="./index.html">&#8592; Back</a> 
+        </div>
+    </div>
+    
+ 	<div class="container" style="margin-top:5%">
+    	<div class="row">
+            <div class="seven columns">
+            	<img class="portpic" src="images/hfamac.png" width="100%" alt="happy face apparel homepage">
+                
+                <h5>Process</h5>
+                <div class="w3-row-padding">
+  					<div class="one-third column">
+		                <img class="w3-hover-opacity" onclick="onClick(this)" style="width:100%;cursor:pointer" src="images/hfainfoarch.pdf" alt="Happy Face Apparel website information architecture">                
+                	</div>
+                	<div class="one-third column">
+		                <img class="w3-hover-opacity" onclick="onClick(this)" style="width:100%;cursor:pointer" src="images/hfapersonas.pdf" alt="Happy Face Apparel website personas">                
+            		</div>
+                    <div class="one-third column">
+                		<img class="w3-hover-opacity" onclick="onClick(this)" style="width:100%;cursor:pointer" src="images/hfaintcomp.pdf" alt="happy face apparel interior page comp">
+					</div>
+                </div>
+                
+                <div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+                  <span class="w3-closebtn w3-hover-blue w3-text-white w3-xxlarge w3-container w3-display-topright">&times;</span>
+                  <div class="w3-modal-content w3-animate-zoom">
+                        <img id="img01" style="width:100%" alt="open images">
+                  </div>
+                </div>  
+                              
+				<script>
+                function onClick(element) {
+                  document.getElementById("img01").src = element.src;
+                  document.getElementById("modal01").style.display = "block";
+                }
+				
+				// Get the modal
+				var modal = document.getElementById('id01');
+				
+				// When the user clicks anywhere outside of the modal, close it
+				window.onclick = function(event) {
+				  if (event.target == modal) {
+					modal.style.display = "none";
+				  }
+				}
+				
+                </script>                
+            </div>
+            
+            <div class="one columns">
+            <p></p>
+            </div>
+         
+			<div class="four columns" id="description">
+            	<h4>Happy Face Apparel</h4>
+        		<p>Happy Face Apparel's website was redone after using an updated information architecture, creating personas, and final critiques.</p>
+                <h5>Tools</h5>
+                <h6>Information architecture</h6> <h6>Personas</h6> <h6>HTML</h6> <h6>CSS</h6> <h6>InDesign</h6> <h6>Photoshop</h6> <h6>Illustrator</h6> <h6>Dreamweaver</h6> <h6>media queries</h6>
+                <div class="six columns">
+                    <a class="button" href="http://www.rachelhopping.com/grc339/project2/index.html" target="_blank">Live website</a>
+                </div>
+            </div>
+       </div>
+    </div>
+  
+</div>
+</body>
+</html>

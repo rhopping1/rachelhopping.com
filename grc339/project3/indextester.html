@@ -1,0 +1,342 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GrC 339 Project 3</title>
+
+<style type="text/css">
+
+.clearfix:before, .clearfix:after{
+
+content: " "; /* 1 */ display: table; /* 2 */
+
+}
+
+.clearfix:after {
+
+clear: both;
+
+}
+
+/** * For IE 6/7 only * Include this rule to trigger hasLayout and contain floats. */
+
+.clearfix { *zoom: 1; }
+
+* {
+	padding:0;
+	margin:0;
+}
+
+#wrapper {
+	min-width:1200px;
+}
+
+#top {
+	height:600px;
+	background-image:url(images/backimage.png);
+	background-size:cover;
+	background-repeat:none;
+	background-position:0px -90px;
+}
+
+nav {
+	width:100%;
+	height:180px;
+}
+
+#navigation {
+	width:540px;
+	height:140px;
+	float:right;
+	margin:50px 140px 0px 0px;
+}
+
+#navigation ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	width:auto;
+}
+
+#navigation ul li {
+	display:inline-block;
+	float:left;
+	font-family: "Century Gothic", sans-serif;
+	font-size:25px;
+	text-transform:uppercase;
+	font-weight:200;
+	font-stretch:semi-expanded;
+}
+
+#navigation ul li a {
+	display:block;
+	padding:8px;
+	margin:0px 5px;
+	text-decoration:none;
+}
+
+#navigation ul a:link {
+	color:#fff;
+}
+
+#navigation ul a:visited {
+	color:#fff;
+}
+
+#navigation ul a:hover {
+	color:#1d854d;
+	font-weight:bold;	
+	text-shadow: none;
+}
+
+#navigation ul a:active {
+	color:#1d854d;
+	font-weight:bold;
+}
+
+#logo {
+	margin:147px 0px 0px 670px;
+/*	float:left;
+	padding:4px 7px 0px 7px;
+	border-radius:20px;
+	background-color:#fff;
+	border:2px solid #1d854d;
+*/}
+
+#slogan {
+	clear:both;
+	padding:5px;
+	margin:0px auto;
+	width:605px;
+	visibility:hidden
+}
+
+#descrip {
+	clear:both;
+	padding:5px;
+	margin:0px auto 0px auto;
+	width:700px;
+	font-weight:200;
+	visibility:hidden;
+}
+
+h1 {
+	color:#fff;
+	font-weight:bolder;
+	line-height:42px;
+	font-family: "Century Gothic", sans-serif;
+	font-size:34px;
+	text-align:center;
+	text-transform:uppercase;
+/*	text-shadow:
+   	-1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+*/}
+
+h3 {
+	color:#fff;
+	font-family: "Century Gothic", sans-serif;
+	line-height:24px;
+	font-weight:300;
+	margin:0px;
+	font-size:20px;
+	text-align:center;
+	text-shadow:
+   	-1px -1px 0 #000,  
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+     1px 1px 0 #000;
+}
+
+p {
+	font-weight:200;
+	line-height:24px;
+	font-size:18px;
+	color:#b60f54;
+	font-family: "Century Gothic", sans-serif;
+	text-indent:-16px;
+	padding:0px 0px 0px 22px;
+}
+
+#main {
+/*	background-image:url(images/swirls.png);
+	background-size:20%;
+	min-width:100%;
+*/	height:430px;
+	background-color:gray;
+/*	padding-left:150px;
+*/}
+
+.section {
+	float:left;
+	margin:65px 50px;
+	width:274px;
+	height:auto;
+}
+
+footer {
+	background-color:#1d854d;
+	min-width:1300px;
+	height:196px;
+	margin-left:-15px;
+}
+
+footer h3{
+	font-size:16px;
+	line-height:20px;
+	text-transform:uppercase;
+	text-align:center;
+}
+
+#links {
+	width:600px;
+	height:auto;
+	float:left;
+	margin:10px 0px 10px 420px;
+}
+
+#links ul{
+	list-style-type:none;
+}
+
+#links li{
+	display:inline-block;
+}
+
+#links a {
+	float:left;
+	width:100px;
+	margin:0px 10px;
+}
+
+#links a:link{
+	text-decoration:none;
+	color:#fff;
+}
+
+#links a:visited{
+	text-decoration:none;
+	color:#fff;
+}
+
+#links a:hover{
+	color:#d0d0d0;
+}
+
+#links a:active{
+	color:#d0d0d0;
+}
+
+#social {
+	text-transform:none;
+	width:500px;
+	margin:0px 0px 0px 520px;
+	padding:0px 20px;
+}
+
+.icons {
+	width:40px;
+	height:40px;
+	float:left;
+	margin:5px 40px;
+	padding:10px 0px 0px 0px;
+}
+
+#info {
+	text-transform:none;
+	clear:both;
+	padding:10px 0px;
+}
+
+#info h3 {
+	text-transform:none;
+	line-height:24px;
+}
+
+#info img {
+	height:13px;
+	width:auto;
+	margin:0px 5px 0px 10px;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="wrapper" class="clearfix">
+
+<div id="top">
+<nav>
+	<div id="navigation">
+        <ul>
+        <li><a href="specials.html">Specials</a></li>
+        <li><a href="flavors.html">Flavors</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+</nav> <!-- end of navigation div -->
+	<div id="slogan">
+    <h1>Serving the best sweet confectionery dessert</h1>
+    </div>
+    <div id="descrip">
+    <h3>Decadent flavor, great number and variety of choices, and excellent customer service at the lowest weight price </h3>
+	</div>
+	<div id="logo">
+    <a href="index.html"> <img src="images/teaberrytype.png" width="632" height="143" alt="Teaberry logo"></a>
+    </div>
+</div> <!-- end of top div -->
+
+<div id="main">
+	<div class="section">
+    <img src="images/section1" width="274" height="206" alt="ice cream machines">
+    <p>⁖ Italian gelato made from scratch in-house</p>
+    </div> <!-- end of section1 -->
+    <div class="section">
+    <img src="images/section2.png" width="274" height="206" alt="toppings bar">
+    <p>⁖ The largest toppings bar in downtown San Luis Obispo</p>
+    </div> <!-- end of section2 -->
+    <div class="section">
+    <img src="images/section3.png" width="274" height="206" alt="flavor list wall">
+    <p>⁖ Rotating custom flavors based on popularity and seasonal demand</p>
+    </div> <!-- end of section3 -->
+</div> <!-- end of main div -->
+
+<footer>
+	<div id="links">
+    	<h3><a href="index.html">Teaberry</a></h3>
+        <h3><a href="specials.html">Specials</a></h3>
+        <h3><a href="flavors.html">Flavors</a></h3>
+        <h3><a href="location.html">Location</a></h3>
+        <h3><a href="about.html">About</a></h3>
+    </div> <!-- end of links -->
+    	
+    <div id="social">
+        <div class="icons">
+        <a href="https://www.facebook.com/"> <img src="images/facebook.png" width="100%" height="100%" alt="facebook link"> </a> <!-- facebook icon here -->
+        </div> <!-- end of facebook icon div 2 -->
+        
+        <div class="icons">
+        <a href="https://www.instagram.com"> <img src="images/instagram.png" width="100%" height="100%" alt="instagram link"> </a> <!-- instagram icon here -->
+        </div> <!-- end of instagram icon div 3 -->
+       
+       	<div class="icons">
+        <a href="https://www.yelp.com/biz/teaberry-frozen-yogurt-and-cafe-san-luis-obispo"> <img src="images/yelp.png" width="100%" height="100%" alt="yelp link"> </a> <!-- yelp icon here -->
+        </div> <!-- end of yelp div -->
+    </div> <!-- end of social -->
+    
+    <div id="info">
+    	<h3>847 Higuera Street, San Luis Obispo, CA 93401</h3>
+        <h3><img src="images/phone.png" width="59" height="95" alt="phone"> (805) 439-0909 <img src="images/email.png" width="83" height="83" alt="email"> teaberryslo.com </h3>
+    </div> <!-- end of info -->
+    
+</footer>
+
+</div> <!-- end of wrapper -->
+
+</body>
+</html>

@@ -1,0 +1,380 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>GrC 339 Project 3</title>
+
+<link href="https://fonts.googleapis.com/css?family=Engagement|Lemonada|Sail" rel="stylesheet">
+
+<style type="text/css">
+
+.clearfix:before, .clearfix:after{
+
+content: " "; /* 1 */ display: table; /* 2 */
+
+}
+
+.clearfix:after {
+
+clear: both;
+
+}
+
+/** * For IE 6/7 only * Include this rule to trigger hasLayout and contain floats. */
+
+.clearfix { *zoom: 1; }
+
+* {
+	margin:0;
+	padding:0;
+}
+
+#wrapper {
+	min-width:1200px;
+}
+
+#top {
+	min-width:1200px;
+	height:120%;
+	background-image:url(images/backimg5.png);
+	background-repeat:no-repeat;
+	background-position:0px -40px;
+	background-size:cover; /* needs to be after position */
+}
+
+nav {
+	width:100%;
+	height:150px;
+}
+
+#navigation {
+	width:500px;
+	height:100px;
+	float:right;
+	margin:50px 5px 0px 0px;
+}
+
+#navigation ul {
+	list-style-type:none;
+	margin:0;
+	padding:0;
+	width:auto;
+}
+
+#navigation ul li {
+	display:inline-block;
+	float:left;
+	font-family: "Century Gothic", sans-serif;
+	font-size:16px;
+	text-transform:uppercase;
+	font-weight:200;
+	font-stretch:semi-expanded;
+}
+
+#navigation ul li a {
+	display:block;
+	padding:8px;
+	margin:0px 5px;
+	text-decoration:none;
+}
+
+#navigation ul a:link {
+	color:#fff;
+}
+
+#navigation ul a:visited {
+	color:#fff;
+}
+
+#navigation ul a:hover {
+	color:#498144;
+	font-weight:bold;	
+	text-shadow: none;
+}
+
+#navigation ul a:active {
+	color:#498144;
+	font-weight:bold;
+}
+
+#logo {
+	margin:-20px auto 0px auto;
+	width:800px;
+/*	float:left;
+	padding:4px 7px 0px 7px;
+	border-radius:20px;
+	background-color:#fff;
+	border:2px solid #1d854d;
+*/}
+
+#slogan {
+	clear:both;
+	padding:5px;
+	margin:0px auto;
+	width:705px;
+	height:100px;
+	letter-spacing:2px;
+}
+
+#descrip {
+	clear:both;
+	padding:5px;
+	margin:0px auto 0px auto;
+	width:600px;
+	font-weight:200;
+	color:pink;
+	display:none;
+/*	visibility:hidden;
+*/}
+
+h1 {
+	color:#fff;
+	font-weight:bolder;
+	line-height:52px;
+	font-family: 'Engagement', cursive; /* Lemonda, Engagement, Sail */
+	font-size:50px;
+	text-align:center;
+}
+
+h3 {
+	color:#fff;
+	font-family: "Century Gothic", sans-serif;
+	line-height:34px;
+	font-weight:300;
+	margin:0px;
+	font-size:18px;
+	text-align:center;
+}
+
+p {
+	font-weight:200;
+	line-height:24px;
+	font-size:18px;
+	color:#rgb(50,50,50);
+	font-family: "Century Gothic", sans-serif;
+	text-indent:-16px;
+	padding:0px 0px 0px 22px;
+}
+
+#main {
+	min-width:100%;
+	height:650px;
+}
+
+#main h3 {
+	clear:both;
+	color:rgb(50,50,50);
+	border-top:3px solid #FACFD0;
+	border-bottom:3px solid #FACFD0;
+	width:600px;
+	margin-left:400px;
+	padding:5px 0px;
+}
+
+.section {
+	float:left;
+	margin:65px 0% 50px 9%;
+	width:280px;
+	height:auto;
+}
+
+.section img {
+	border-radius:20px;
+}
+
+.section p {
+	padding-top:15px;
+}
+
+footer {
+	background-color:rgba(120,120,120,1);
+	min-width:1300px;
+	height:215px;
+	margin-left:-15px;
+	clear:both;
+}
+
+footer h3{
+	text-transform:uppercase;
+	text-align:center;
+}
+
+#links {
+	width:600px;
+	height:auto;
+	float:left;
+	margin:30px 0px 10px 420px;
+}
+
+#links ul{
+	list-style-type:none;
+}
+
+#links li{
+	display:inline-block;
+}
+
+#links a {
+	float:left;
+	width:100px;
+	margin:0px 10px;
+}
+
+#links a:link{
+	text-decoration:none;
+	color:#fff;
+}
+
+#links a:visited{
+	text-decoration:none;
+	color:#fff;
+}
+
+#links a:hover{
+	color:#d0d0d0;
+}
+
+#links a:active{
+	color:#d0d0d0;
+}
+
+#social {
+	text-transform:none;
+	width:500px;
+	margin:0px 0px 0px 520px;
+	padding:0px 20px;
+}
+
+.icons {
+	width:40px;
+	height:40px;
+	float:left;
+	margin:5px 40px;
+	padding:10px 0px 0px 0px;
+}
+
+#info {
+	text-transform:none;
+	clear:both;
+	padding:10px 0px;
+	width:600px;
+	margin:0px 0px 0px 420px;
+}
+
+#info h3 {
+	text-transform:none;
+	line-height:24px;
+}
+
+#info img {
+	height:13px;
+	width:auto;
+	margin:0px 5px 0px 10px;
+}
+
+#info a:link {
+	color:#fff;
+	text-decoration:none;
+}
+
+#info a:hover {
+	color:#d0d0d0;
+	text-decoration:none;
+}
+
+#info a:visited {
+	color:#fff;
+	text-decoration:none;
+}
+
+#info a:active {
+	color:#d0d0d0;
+	text-decoration:none;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<div id="wrapper" class="clearfix">
+
+<div id="top">
+<nav>
+	<div id="navigation">
+        <ul>
+        <li><a href="specials.html">Specials</a></li>
+        <li><a href="flavors.html">Flavors</a></li>
+        <li><a href="location.html">Location</a></li>
+        <li><a href="about.html">About</a></li>
+        </ul>
+    </div>
+</nav> <!-- end of navigation div -->
+	<div id="logo">
+    <a href="index.html"> <img src="images/logo3.png" width="688" height="253" alt="Teaberry logo"></a>
+    </div>
+	<div id="slogan">
+    <h1>Serving the best sweet confectionery dessert</h1>
+    </div>
+    <div id="descrip">
+    <h3>Decadent flavor, great number and variety of choices, and excellent customer service at the lowest weight price </h3>
+	</div>
+</div> <!-- end of top div -->
+
+<div id="main">
+	<div class="section">
+    <img src="images/eating.png" width="300" height="299" alt="woman eating frozen yogurt">
+    <p><img src="images/berry.png" width="13" height="15" alt="berry"> Italian gelato made from scratch in-house</p>
+    </div> <!-- end of section1 -->
+    <div class="section">
+    <img src="images/toppings.png" width="300" height="299" alt="candy toppings">
+    <p><img src="images/berry.png" width="13" height="15" alt="berry"> The largest toppings bar in downtown San Luis Obispo</p>
+    </div> <!-- end of section2 -->
+    <div class="section">
+    <img src="images/flavorsign.png" width="300" height="299" alt="flavor list wall">
+    <p><img src="images/berry.png" width="13" height="15" alt="berry"> Rotating custom flavors based on popularity and seasonal demand</p>
+    </div> <!-- end of section3 -->
+    
+    <h3>All flavors and toppings are 45&cent; per ounce <br>
+    For our customers' health and safety, samples are not provided </h3>
+    
+</div> <!-- end of main div -->
+
+<!-- #BeginLibraryItem "/Library/footer.lbi" -->
+<footer>
+  <div id="links">
+    <h3><a href="index.html">Teaberry</a></h3>
+    <h3><a href="specials.html">Specials</a></h3>
+    <h3><a href="flavors.html">Flavors</a></h3>
+    <h3><a href="location.html">Location</a></h3>
+    <h3><a href="about.html">About</a></h3>
+  </div>
+  <!-- end of links -->
+  <div id="social">
+    <div class="icons"> <a href="https://www.facebook.com/"> <img src="Library/images/facebook.png" width="100%" height="100%" alt="facebook link"></a>
+      <!-- facebook icon here -->
+    </div>
+    <!-- end of facebook icon div 2 -->
+    <div class="icons"> <a href="https://www.instagram.com"> <img src="Library/images/instagram.png" width="100%" height="100%" alt="instagram link"></a>
+      <!-- instagram icon here -->
+    </div>
+    <!-- end of instagram icon div 3 -->
+    <div class="icons"> <a href="https://www.yelp.com/biz/teaberry-frozen-yogurt-and-cafe-san-luis-obispo"> <img src="Library/images/yelp.png" width="100%" height="100%" alt="yelp link"></a>
+      <!-- yelp icon here -->
+    </div>
+    <!-- end of yelp div -->
+  </div>
+  <!-- end of social -->
+  <div id="info">
+    <h3>847 Higuera Street, San Luis Obispo, CA 93401</h3>
+    <h3><img src="Library/images/phone.png" width="121" height="197" alt="phone"> (805) 439-0909 <img src="Library/images/email.png" width="120" height="120" alt="email"> <a href="mailto:teaberryslo.com"> teaberryslo.com</a></h3>
+  </div>
+  <!-- end of info -->
+</footer>
+<!-- #EndLibraryItem --> 
+
+</div> <!-- end of wrapper -->
+
+</body>
+</html>
