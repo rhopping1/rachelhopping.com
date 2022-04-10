@@ -1,5 +1,3 @@
-console.log('js loaded');
-
 $(document).ready(function () {
     getYear();
     
@@ -29,16 +27,16 @@ $(document).ready(function () {
         console.log(i, 'starting i');
         var nextSection = '#resume-'+[i];
         $(nextSection).css("display", "block");
-        if (i === 3) {
+        if (i === 2) {
             $('#nextBtn').html("View my leadership");
         }
-        if (i === 4) {
+        if (i === 3) {
             $('#nextBtn').html("View my education");
         }
-        if (i === 5) {
+        if (i === 4) {
             $('#nextBtn').html("Close my resume");
         }
-        if (i === 6) {
+        if (i === 5) {
             $('#resume-1').css("display", "none");
             for (j=1; j < i+1; j++) {
                 var nextSection = '#resume-'+[j];
