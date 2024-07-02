@@ -1,0 +1,15 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+
+  <div class="container footer"> <!-- footer area -->
+  	<div class="row">
+    	<div class="four columns" style="margin-top:5%;text-align:center">
+        <a href="https://www.linkedin.com/in/rachel-hopping" target="_blank" class="link"><img src="../images/linkedin.png" height="30" alt="Linkedin link"></a>
+        <a href="mailto:rhopping1@yahoo.com" class="link"><img src="../images/email.png" height="30" alt="email me"></a>
+		<a href="images/R-Hopping-resume.pdf" target="_blank" class="link"><img src="../images/doc.png" height="30" alt="resume link"></a>
+        </div>
+        <div class="offset-by-four columns four" style="margin-top:5%; text-align:center">
+        <p>created by Rachel Hopping</p>
+        </div>
+    </div>
+  </div>
+  

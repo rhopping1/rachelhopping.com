@@ -1,0 +1,22 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">  	
+	
+   <div class="container" style="margin-top:5%">
+        <div class="row">
+           	<div class="two columns logo">
+				<a href="../index.html"><img src="../images/r_logo.png" width="100" alt="Rachel Hopping logo"></a>
+			</div>
+            <div class="four columns name">
+                <h4>Rachel Hopping</h4>
+            </div>
+        
+            <div class="six columns navigation">
+                <ul>
+					<li><a href="../index.html">Portfolio</a></li>
+					<li><a href="../images/R-Hopping-resume.pdf" target="_blank">Resum&eacute;</a></li>
+					<li><a href="../about.html">About</a></li>
+					<li><a href="../contact.html">Contact</a></li>
+					<!-- <li><a href="../softball.html">Softball Blog</a></li> -->
+                </ul>
+            </div>    
+        </div> <!-- row -->
+ 	</div>
